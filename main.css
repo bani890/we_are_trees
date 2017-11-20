@@ -1,0 +1,198 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: cursive;
+  font-size: 12px;
+  color: #424242;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0; 
+}
+
+header, nav, footer, section, article, div {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/*
+ *
+ * Header
+ *
+ */
+
+.header {
+  box-shadow: 0 2px 5px rgba(36, 35, 35, 0.26);
+  min-height: 56px;
+  transition: min-height 0.3s;
+
+}
+
+.header__inner {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.header__logo {
+  height: 72px;
+  margin-right: 1em;
+  vertical-align: top;
+  margin-top: 12px;
+}
+
+.header_title {
+  font-family: cursive;
+  margin: 0.5em 0.25em;
+  color: #413e3e;
+  margin-right: 100px;
+  text-align: right;
+}
+.logo_spec {
+  height: 50px;
+  float: left;
+} 
+
+/*
+ *
+ * Content
+ *
+ */
+
+
+/*
+ *
+ * Hero
+ *
+ */
+
+.hero {
+  width: 100%;
+  position: relative;
+  background-image: url("./images/neural network.jpg");
+  background-size: cover;
+  height: 300px;
+}
+
+.hero article {
+  box-sizing: border-box;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  bottom: 0;
+  height: 40%;
+  width: 100%;
+  color: #fff;
+  padding: 1em;
+}
+.description{
+display: grid;
+overflow: auto;
+
+}
+
+/*
+ *
+ * Snippet Container
+ *
+ */
+.wrapper{
+padding-top: 1em;
+margin-bottom: 60px;
+}
+.container {
+  border-bottom: 1px solid #E0E0E0;
+  padding: 1em;
+}
+
+
+/*
+ *
+ * Snippet
+ *
+ */
+
+.snippet {
+  clear: both;
+  margin: 24px 0;
+
+}
+
+.snippet__thumbnail {
+width:100%;
+}
+.caption_properties{
+  font-family: cursive
+}
+
+div.footer {
+width:100%;
+height: 60px;
+background:#424242;
+position: fixed;
+bottom: 0px;
+display: grid;
+grid-template-columns:50px 50px 50px 50px;
+}
+.fa{
+  padding: 10px;
+  font-size: 5px;
+  width: 10px;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+@media only screen
+and (min-width: 568px)
+and (-webkit-min-device-pixel-ratio: 2) {
+.container {
+
+ display:grid;
+ grid-template-columns: 1fr 1fr 1fr;
+border-bottom: 1px;
+padding: 1em;
+}
+div.footer {
+  width:100%;
+  height: 60px;
+  background:#424242;
+  position:static;
+  margin-bottom: 0px;
+  }
+
+}
+
